@@ -10,7 +10,7 @@ async function sendMessage() {
   input.value = "";
   typing.style.display = "block";
 
-  const response = await fetch("https://mera-babu.vercel.app/", {
+  const response = await fetch("https://mera-babu.vercel.app/api/gpt", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
